@@ -1,0 +1,42 @@
+/*=============================================================================
+                                CONTACT FORM
+==============================================================================*/
+form {
+    font-family: Avant Garde, Helvetica;
+    text-align: center;
+}
+
+input[type=text] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding: 8px;
+    width: 30%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Calibri;
+}
+
+#message {
+    padding-bottom:250px;
+}
+
+input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    font-family: Calibri;
+    color: white;
+    background-color: #0060ff;
+}
+
+input[type=submit]:hover {
+    font-weight: bold;
+	background-color: #003ea5;
+}
