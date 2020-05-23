@@ -1,0 +1,62 @@
+body {
+    background-color: darkblue;
+}
+
+h1 {
+    font-family: Optima;
+    color: white;
+}
+
+h3 {
+    font-family: Optima;
+    color: white;
+}
+
+div {
+    font-family: Avant Garde, Helvetica;
+    color: white;
+}
+
+#menuBG {
+    width: 610px;
+    height: 670px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 610px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align:top;
+    width: 200px;
+    height: 200px;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
