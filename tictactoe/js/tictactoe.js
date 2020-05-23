@@ -346,7 +346,7 @@ function glowBoard(pos) {
 function squareSound() {
     var sound = document.getElementById("place-avatar");
     sound.play();
-    setTimeout(function() {sound.play();}, 400); /* Add delay to these to keep sound short. */
+    setTimeout(function() {sound.pause();}, 400); /* Add delay to these to keep sound short. */
     setTimeout(function() {sound.currentTime = 0;}, 500);
 }
 
