@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+    <head>
+        <title>Luis Nevarez</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <!--END HEAD-->
+
+    <!--BODY-->
+    <body>
+        <script>document.body.className += "fade-out";</script>
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a><!--
+            --><a class="nav1" href="#slideshow">Slideshow</a><!--
+            --><a class="nav2" href="#about">About</a><!--
+            --><a class="nav3" href="#github">GitHub</a><!--
+            --><button class="nav4" onclick="openForm()">Contact</button>
+        </div>
+        <!--END NAVBAR-->
+
+        <!--CONTACT FORM-->
+        <div class="form-popup" id="contact-form">
+            <form name="c-form" class="form-container" action="" onsubmit="return validateForm()" method="post">
+                <label for="first-name">First Name:</label><br />
+                <input type="text" id="first-name" name="first-name" placeholder="Please enter your first name here"><br />
+
+                <label for="last-name">Last Name:</label><br />
+                <input type="text" id="last-name" name="last-name" placeholder="Please enter your last name here"><br />
+
+                <label for="email">Email:</label><br />
+                <input type="text" id="email" name="email" placeholder="Please enter your email here"><br />
+
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" placeholder="Please enter your message here"></textarea><br /><br />
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form> 
+        </div>
+        <!--END CONTACT FORM-->
+
+        <!--HEADER VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="bear-video">
+                <source src="resources/video/bear.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!--END HEADER VIDEO-->
+
+        <!--HEADER TEXT-->
+        <div class="vid-text-container">
+            <div class="video-text">
+                <img class="center" src="./resources/images/welcome.png">
+                <p>
+                    Hello, my name is Luis Nevarez and this website is dedicated to showcasing my background and experience with programming.<br />
+                    <br />Thank you for taking the time to view it! 
+                </p>
+                <img class="center" src="./resources/images/paw.png">
+            </div>
+        </div>
+        <!--END HEADER TEXT-->
+
+        <!--SLIDESHOW-->
+        <div id="slideshow" class="slideshow">
+            <div>
+                
+            </div>
+        </div>
+        <!--END SLIDESHOW-->
+
+        <!--ABOUT-->
+        <div id="about" class="row">
+            <div class="column-2">
+                <div class="thread">
+                    <img src="resources/images/profile_picture.png" alt="" class="image-blur center">
+                </div>
+            </div>
+            <div class="column-1">
+                <div class="board scroll">
+                    <h1>About</h1>
+                    <p>
+                        I’m a software developer who has a passion for coding. 
+                        I’m also an art hobbyist who enjoys drawing and computer 
+                        graphics. <br /><br /><br />I'm currently enrolled as a student of 
+                        <a href="https://www.learncodinganywhere.com" 
+                        target="_blank">The Tech Academy</a>’s Software Developer 
+                        Boot Camp, and am being trained and becoming more experienced in the 
+                        following web and programming languages: HTML, CSS, JavaScript, SQL, C# 
+                        and more. <br /><br /><br />My intentions are to become a full-stack 
+                        developer and would love to work with you on your project. 
+                        <a class="pointer" onclick="openForm()">Contact</a> me below!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--END ABOUT-->
+
+        <!--GITHUB-->
+        <div id="github" class="row">
+            <div class="column-1">
+                <div class="board">
+                    <h1>GitHub</h1>
+                    <p>You can view my coding projects on my GitHub profile here:<br /></p>
+                    <div class="my-github">
+                        <a href="https://github.com/koddiak" target="_blank">My GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="thread">
+                    <a href="https://github.com/koddiak" target="_blank"><img src="resources/images/github.jpg" alt="" class="image-blur center"></a>
+                </div>
+            </div>
+        </div>
+        <!--END GITHUB-->
+
+        <!--FOOTER-->
+        <footer>
+                <p>&copy; Luis Nevarez 2020. All Rights Reserved.</p>
+        </footer>
+        <!--END FOOTER-->
+    </body>
+    <!--END BODY-->
+    <script src="./js/index.js"></script>
+</html>
