@@ -67,22 +67,63 @@
         <!--END HEADER TEXT-->
 
         <!--SLIDESHOW-->
-        <div id="slideshow" class="slideshow">
-            <div>
-                
+        <!--Slideshow container-->
+        <br /><br />
+        <div id="slideshow" class="slideshow-container zoom-image">
+
+            <!--Full-width images with caption text-->
+            <div class="my-slides fade">
+                <img src="./resources/images/slide1.png" style="width: 100%; border-radius: 5px;">
+                <div class="text">I'm ready and able to assist you on your project!</div>
             </div>
+            <div class="my-slides fade">
+                <img src="./resources/images/slide2.png" style="width: 100%; border-radius: 5px;">
+                <div class="text">I'm a full-stack software developer, trained in HTML, CSS, JavaScript,</div>
+            </div>
+            <div class="my-slides fade">
+                <img src="./resources/images/slide3.png" style="width: 100%; border-radius: 5px;">
+                <div class="text">the popular programming language Python, </div>
+            </div>
+            <div class="my-slides fade">
+                <img src="./resources/images/slide4.png" style="width: 100%; border-radius: 5px;">
+                <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+            </div>
+            <div class="my-slides fade">
+                <img src="./resources/images/slide5.png" style="width: 100%; border-radius: 5px;">
+                <div class="text">back-end development, databases and SQL.</div>
+            </div>
+            <div class="my-slides fade">
+                <img src="./resources/images/slide6.png" style="width: 100%; border-radius: 5px;">
+                <div class="text" onclick="openForm()" style="cursor: pointer; text-decoration: underline;">Contact me today!</div>
+            </div>
+
+            <!--Next and previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br /><br />
+        
+        <!--The dots/circles-->
+        <div style="text-align: center">
+               <span class="dot" onclick="currentSlide(1)"></span><!--
+            --><span class="dot" onclick="currentSlide(2)"></span><!--
+            --><span class="dot" onclick="currentSlide(3)"></span><!--
+            --><span class="dot" onclick="currentSlide(4)"></span><!--
+            --><span class="dot" onclick="currentSlide(5)"></span><!--
+            --><span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <br />
         <!--END SLIDESHOW-->
 
         <!--ABOUT-->
         <div id="about" class="row">
             <div class="column-2">
                 <div class="thread">
-                    <img src="resources/images/profile_picture.png" alt="" class="image-blur center">
+                    <img src="resources/images/profile_picture.jpg" alt="" class="image-blur center">
                 </div>
             </div>
             <div class="column-1">
-                <div class="board scroll">
+                <div class="board" style="overflow: auto;">
                     <h1>About</h1>
                     <p>
                         I’m a software developer who has a passion for coding. 
@@ -94,7 +135,7 @@
                         following web and programming languages: HTML, CSS, JavaScript, SQL, C# 
                         and more. <br /><br /><br />My intentions are to become a full-stack 
                         developer and would love to work with you on your project. 
-                        <a class="pointer" onclick="openForm()">Contact</a> me below!
+                        <a onclick="openForm()" style="cursor: pointer;">Contact</a> me today!
                     </p>
                 </div>
             </div>
@@ -114,7 +155,7 @@
             </div>
             <div class="column-2">
                 <div class="thread">
-                    <a href="https://github.com/koddiak" target="_blank"><img src="resources/images/github.jpg" alt="" class="image-blur center"></a>
+                    <a href="https://github.com/koddiak" target="_blank"><img src="resources/images/github.png" alt="" class="image-blur center"></a>
                 </div>
             </div>
         </div>
